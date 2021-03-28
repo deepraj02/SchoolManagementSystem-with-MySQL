@@ -106,7 +106,7 @@ def updateData():
 print("Welcome to KV Kailashahar Official Database:\n")
 
 
-# * Looping to provide continuous Entry
+#* Looping to provide continuous Entry
 
 while True:
     print("What Operation would you like to Perform")
