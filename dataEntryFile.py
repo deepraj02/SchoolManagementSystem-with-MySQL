@@ -70,7 +70,6 @@ def dataEntry():
     labelFrame = Frame(root, bg='black')
     labelFrame.place(relx=0.1, rely=0.3, relwidth=0.8, relheight=0.5)
 
-    # Book ID to Delete
     lb2 = Label(labelFrame, text="Roll NO : ", bg='black',
                 fg='white', font="hack 14")
     lb2.place(relx=0.08, rely=0.2)

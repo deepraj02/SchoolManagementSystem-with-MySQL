@@ -1,3 +1,4 @@
+
 from tkinter import *
 import mysql.connector
 import tkinter.messagebox as tmsg
@@ -18,13 +19,6 @@ mycursor = mydb.cursor()
 
 def deleteThatSucker():
     global mycursor, roo
-
-    # a = input("Enter Your Rollno:\t")
-    # b = input("Enter Your Name:\t")
-    # c = input("Enter your Class:\t")
-    # d = input("Enter Your Phone Number:\t")
-    # e = input("Enter your Address:\t\n")
-
 
     sql = f"DELETE FROM Student WHERE rollno = {roo.get()}"
     mycursor.execute(sql)
@@ -67,7 +61,6 @@ def deleteEntry():
     labelFrame = Frame(root, bg='black')
     labelFrame.place(relx=0.1, rely=0.3, relwidth=0.8, relheight=0.5)
 
-    # Book ID to Delete
     lb2 = Label(labelFrame, text="Roll N0. : ",
                 bg='black', fg='white', font="hack 15")
     lb2.place(relx=0.05, rely=0.5)

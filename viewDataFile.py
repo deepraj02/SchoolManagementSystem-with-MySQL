@@ -1,3 +1,4 @@
+
 from tkinter import *
 import mysql.connector
 import tkinter.messagebox as tmsg
@@ -36,13 +37,14 @@ def viewEntry():
     headingFrame1.place(relx=0.25, rely=0.1, relwidth=0.5, relheight=0.13)
 
     headingLabel = Label(headingFrame1, text="View Details",
-                         bg='black', fg='white', font=("firacode 17"))
+                         bg='black', fg='white', font=("hack 20"))
     headingLabel.place(relx=0, rely=0, relwidth=1, relheight=1)
 
-    labelFrame = Frame(root,bg='black')
+    labelFrame = Canvas(root,bg='black',yscrollcommand = scrollbar.set)
     labelFrame.place(relx=0.1, rely=0.3, relwidth=0.8, relheight=0.55)
     y = 0.25
 
+    scrollbar.config(command=labelFrame.yview)
 
 
 
@@ -51,8 +53,6 @@ def viewEntry():
     Label(labelFrame, text="---------------------------------------------------------------------------------------------------------------------------------------------------------------------",
           bg='black', fg='white').place(relx=0.05, rely=0.2)
     
-    
-
 
 
     Com=("SELECT * FROM student")

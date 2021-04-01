@@ -1,10 +1,10 @@
 from tkinter import *
 import tkinter.messagebox as tmsg
 import pyfiglet
-from PIL import ImageTk, Image
 import mysql.connector
 from ttkthemes import themed_tk as t
 from tkinter import ttk
+
 from dataEntryFile import *
 from deleteDataFile import *
 from updateEntryFile import *
