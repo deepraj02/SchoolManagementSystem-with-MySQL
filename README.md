@@ -26,6 +26,20 @@ The Modules you need to run this program on your system are as follows:
 
     1. Tkinter
     2. mysqlconnector
+
+## DATABASE CONNECTION
+
+Copy and Paste this code in your MySQL Editor before running the Program.
+
+
+    Also, we need to create a Database which in our case is MySQL.
+    After creating the Database, we have to create 1 table to store the data of books present in the School.
+
+    Use the Following Commands to create the Database and Tables which are required by our Project.
+	
+        •    create database SchoolManagement;
+        •	create table student (RollNo varchar (20) primary key, Name varchar (30), Class varchar (30), Phone varchar (30), Address Varchar(1oo))
+
     
 
 
@@ -59,4 +73,5 @@ Download this Repository in your System and then follow the Documentation and yo
     cd SchoolManagementSystem-with-MySQL
     python main.py
 ```
+    
     
